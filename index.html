@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julien Polycarpe — ECE &amp; CS</title>
+<meta name="description" content="Julien Polycarpe — Electrical &amp; Computer Engineering and Computer Science student at WPI. Coursework, projects, and experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <a href="#top" class="mark">JP</a>
+    <p class="mark-sub">ECE&nbsp;+&nbsp;CS</p>
+  </div>
+
+  <nav class="sidenav" aria-label="Section navigation">
+    <a href="#about" class="sidenav-link">About</a>
+    <a href="#experience" class="sidenav-link">Experience</a>
+    <a href="#projects" class="sidenav-link">Projects</a>
+    <a href="#coursework" class="sidenav-link">Coursework</a>
+    <a href="#skills" class="sidenav-link">Skills</a>
+    <a href="#contact" class="sidenav-link">Contact</a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <a href="mailto:juliennpolycarpe@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/juliennpolycarpe917" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/juliennpolycarpe" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</aside>
+
+<main id="top">
+
+  <section class="hero" id="hero">
+    <p class="hero-kicker">Worcester Polytechnic Institute — Class of 2028</p>
+    <h1 class="hero-name">Julien<br>Polycarpe</h1>
+    <p class="hero-role">Electrical &amp; Computer Engineering<br>+ Computer Science</p>
+
+    <div class="scope">
+      <svg class="scope-svg" viewBox="0 0 800 160" preserveAspectRatio="none" aria-hidden="true">
+        <line class="scope-grid" x1="0" y1="40" x2="800" y2="40"></line>
+        <line class="scope-grid" x1="0" y1="80" x2="800" y2="80"></line>
+        <line class="scope-grid" x1="0" y1="120" x2="800" y2="120"></line>
+        <path class="scope-trace" id="scopeTrace"
+          d="M0,80 C40,80 40,20 80,20 S120,140 160,140 200,20 240,20 280,140 320,140 360,20 400,20 440,140 480,140 520,20 560,20 600,140 640,140 680,80 720,80 760,80 800,80 800,80"
+          fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="section-body">
+      <p>I'm a junior at WPI studying Electrical &amp; Computer Engineering and Computer Science, splitting time between signal chains and software stacks. My coursework and projects sit at the boundary between the two — writing the firmware for a sensor and the interface that reads it, or the FSM that drives a traffic light and the ORM behind a web platform.</p>
+      <p>Dean's List, LSAMP Scholar. Based in Brooklyn, NY; on campus in Worcester, MA the rest of the year. Outside of class I'm Treasurer of the Black Student Union, DEI Director for WPI's Interfraternity Council, and Scholarship Chair for Theta Chi.</p>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="entries">
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">STV</h3>
+          <span class="entry-date">May 2026 — Present</span>
+        </div>
+        <p class="entry-role">Office Engineer Intern · Manhattan, NY</p>
+        <ul class="entry-list">
+          <li>Audited hundreds of invoices to help resolve a $10M budget deficit on a multi-borough infrastructure bundle project, reconciling labor hours against contracted positions</li>
+          <li>Built and maintained a submittal tracking log of 1,400+ submittals to monitor disposition status, review dates, and compliance</li>
+          <li>Produced and revised 200+ organizational charts across active projects to keep staffing records accurate</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Eastchester Union Free School District</h3>
+          <span class="entry-date">May 2024 — Jul 2024</span>
+        </div>
+        <p class="entry-role">Information Technology Intern · Eastchester, NY</p>
+        <ul class="entry-list">
+          <li>Configured and installed software on 200+ devices to ensure reliable functionality for staff and students</li>
+          <li>Installed new servers across multiple buildings to upgrade Wi-Fi infrastructure, increasing coverage by 10%</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Sweetgreen</h3>
+          <span class="entry-date">Jun 2025 — Aug 2025</span>
+        </div>
+        <p class="entry-role">Front of House · New York, NY</p>
+        <ul class="entry-list">
+          <li>Delivered prompt, friendly service to maintain a smooth, consistent flow of guest orders in a fast-paced environment</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="entries">
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Insurance Web Platform</h3>
+        </div>
+        <p class="entry-role">Product Owner &amp; Full-Stack Engineer · 10-person team · 7-week Agile cycle</p>
+        <p class="entry-desc">A full-stack web platform built for an insurance company as a major software engineering project. I split time between product ownership and implementation — scoping sprints for the team while building out the frontend and backend myself.</p>
+        <ul class="entry-list">
+          <li>Built responsive frontend features in React and TypeScript, integrating component libraries and client-side routing</li>
+          <li>Implemented Auth0 authentication and designed the backend data layer with Prisma ORM to secure user access and manage schema migrations</li>
+        </ul>
+        <p class="entry-stack">React · TypeScript · HTML/CSS · Auth0 · Prisma · Bun</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Greenhouse Climate Data System</h3>
+        </div>
+        <ul class="entry-list">
+          <li>Engineered an AVL tree-based storage system to process 10,000+ temperature and humidity records, achieving a 40% improvement in retrieval efficiency</li>
+          <li>Developed dataset comparison, merging, and cloning functionality to demonstrate complex data structure operations and algorithmic design</li>
+        </ul>
+        <p class="entry-stack">Java · Data Structures · Object-Oriented Programming</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Four-Way Traffic Intersection System</h3>
+        </div>
+        <ul class="entry-list">
+          <li>Designed a 14-gate, 3-flip-flop logic diagram and a 5-state Moore FSM to model all light cycles, including pedestrian-request handling</li>
+          <li>Implemented the controller in Verilog in Vivado and verified system timing to ensure reliable, deterministic state transitions</li>
+        </ul>
+        <p class="entry-stack">Verilog · Moore FSMs · Vivado</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Autonomous Wall-Following Car</h3>
+        </div>
+        <p class="entry-desc">A self-navigating car built on a breadboard, using ultrasonic distance sensors to track its distance from a wall on either side and steer accordingly, with a light sensor governing separate light-seeking behavior. LEDs provided status/headlight output.</p>
+        <p class="entry-stack">Arduino IDE · Ultrasonic Distance Sensors · Photoresistors · Breadboard</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">LCD Jukebox</h3>
+        </div>
+        <p class="entry-desc">A button-controlled music player with a live LCD readout, where physical buttons speed up and slow down playback in real time.</p>
+        <p class="entry-stack">Arduino IDE · LCD Display · Breadboard</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="coursework">
+    <h2 class="section-title">Coursework</h2>
+
+    <div class="course-group">
+      <h3 class="course-group-title">Computer Science</h3>
+      <ul class="course-list">
+        <li><span class="course-code">CS 1101</span>Introduction to Program Design</li>
+        <li><span class="course-code">CS 2102</span>Object-Oriented Design Concepts</li>
+        <li><span class="course-code">CS 2022</span>Discrete Mathematics</li>
+        <li><span class="course-code">CS 2223</span>Algorithms</li>
+        <li><span class="course-code">CS 2303</span>Systems Programming Concepts</li>
+        <li><span class="course-code">CS 3431</span>Database Systems I</li>
+        <li><span class="course-code">CS 3733</span>Software Engineering</li>
+      </ul>
+    </div>
+
+    <div class="course-group">
+      <h3 class="course-group-title">Electrical &amp; Computer Engineering</h3>
+      <ul class="course-list">
+        <li><span class="course-code">ECE 2010</span>Introduction to Electrical &amp; Computer Engineering</li>
+        <li><span class="course-code">ECE 2019</span>Sensors, Circuits, and Systems</li>
+        <li><span class="course-code">ECE 2029</span>Introduction to Digital Circuit Design</li>
+        <li><span class="course-code">ECE 2039</span>Computational Engineering</li>
+        <li><span class="course-code">ECE 2311</span>Continuous-Time Signal and System Analysis</li>
+      </ul>
+    </div>
+
+    <div class="course-group">
+      <h3 class="course-group-title">Math &amp; Science</h3>
+      <ul class="course-list">
+        <li><span class="course-code">MA 1023</span>Calculus III</li>
+        <li><span class="course-code">MA 1024</span>Calculus IV</li>
+        <li><span class="course-code">MA 2051</span>Ordinary Differential Equations</li>
+        <li><span class="course-code">MA 2071</span>Matrices and Linear Algebra I</li>
+        <li><span class="course-code">MA 2611</span>Applied Statistics I</li>
+        <li><span class="course-code">MA 2621</span>Probability for Applications</li>
+        <li><span class="course-code">PH 1110</span>General Physics — Mechanics</li>
+        <li><span class="course-code">PH 1120</span>General Physics — Electricity and Magnetism</li>
+        <li><span class="course-code">ES 2501</span>Introduction to Static Systems</li>
+      </ul>
+    </div>
+
+    <div class="course-group">
+      <h3 class="course-group-title">Other</h3>
+      <ul class="course-list">
+        <li><span class="course-code">ECON 1110</span>Introductory Microeconomics</li>
+        <li><span class="course-code">WR 1010</span>Elements of Writing</li>
+        <li><span class="course-code">MU 1000</span>Music and Its Makers</li>
+        <li><span class="course-code">MU 1100</span>Foundations of Music Theory and Aural Skills</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-group">
+      <h3 class="skill-group-title">Languages</h3>
+      <p class="skill-list">Java, JavaScript, TypeScript, C, C++, Python, R, SQL, HTML/CSS, Verilog</p>
+    </div>
+    <div class="skill-group">
+      <h3 class="skill-group-title">Frameworks &amp; Tools</h3>
+      <p class="skill-list">React, Prisma, Bun, Auth0, Git/GitHub, AWS, Vivado, MATLAB, IntelliJ, VS Code, Arduino IDE, LTSpice</p>
+    </div>
+    <div class="skill-group">
+      <h3 class="skill-group-title">Concepts</h3>
+      <p class="skill-list">Data Structures &amp; Algorithms, OOD, Full-Stack Development, Embedded Systems, Machine Learning, Digital Circuit Design</p>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="section-body">
+      <p>Open to internships and collaborations across software and hardware. Reach out any time.</p>
+      <div class="contact-links">
+        <a href="mailto:juliennpolycarpe@gmail.com">juliennpolycarpe@gmail.com</a>
+        <a href="https://www.linkedin.com/in/juliennpolycarpe917" target="_blank" rel="noopener">linkedin.com/in/juliennpolycarpe917</a>
+        <a href="https://github.com/juliennpolycarpe" target="_blank" rel="noopener">github.com/juliennpolycarpe</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Julien Polycarpe — Worcester, MA / Brooklyn, NY</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
