@@ -369,12 +369,18 @@ main{
 .back-link{
   font-family: var(--font-mono);
   font-size: 13px;
-  color: var(--text-faint);
-  display: inline-block;
-  margin-bottom: 28px;
+  color: var(--text-dim);
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 10px 18px;
+  background: var(--surface);
+  margin-bottom: 40px;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.back-link:hover{ color: var(--amber); }
+.back-link:hover{ color: var(--amber); border-color: var(--amber-dim); }
 
 .detail{ max-width: var(--content-max); padding-bottom: 40px; }
 
