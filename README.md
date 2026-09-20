@@ -47,7 +47,7 @@ This is a static site — plain HTML, CSS, and JavaScript, no build step or fram
 
 ## Running it locally
 
-No installation or build step is required — just a way to serve the files so relative paths and scripts work correctly.
+No installation or build step is required, just a way to serve the files so relative paths and scripts work correctly.
 
 **Option 1 — VS Code Live Server (recommended)**
 1. Install the **Live Server** extension (by Ritwick Dey) from the VS Code Extensions panel
