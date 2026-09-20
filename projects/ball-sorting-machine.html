@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light-Reflectance Ball Sorter — Julien Polycarpe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<main>
+  <div class="page-head" style="padding-top:96px;">
+    <a href="../projects.html" class="back-link">← Back to Projects</a>
+  </div>
+
+  <article class="detail">
+    <h1 class="detail-title">Light-Reflectance Ball Sorter</h1>
+
+    <p class="detail-desc">A machine that automatically sorts balls of different colors by reading how much light each one reflects. A photoresistor (LDR) positioned above the sort point measures reflected light intensity as each ball passes underneath — darker colors reflect less light, lighter colors reflect more — and the readings are used to classify and route each ball to its own bin.</p>
+
+    <ul class="detail-list">
+      <li>Used a photoresistor (LDR) as a reflectance sensor to distinguish balls by color based on measured light intensity</li>
+      <li>Calibrated threshold values in firmware to reliably separate each color under consistent lighting</li>
+      <li>Drove servo motors to physically route each ball to its corresponding bin after classification</li>
+    </ul>
+
+    <p class="detail-stack">Arduino IDE · Photoresistor (LDR) · Servo Motors · Breadboard</p>
+  </article>
+
+  <footer class="footer">
+    <p>Julien Polycarpe — Worcester, MA / Brooklyn, NY</p>
+  </footer>
+</main>
+
+<script>
+  window.SITE_ROOT = "../";
+  window.CURRENT_PAGE = "projects";
+</script>
+<script src="../common.js"></script>
+</body>
+</html>

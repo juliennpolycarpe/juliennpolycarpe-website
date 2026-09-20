@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website — Julien Polycarpe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<main>
+  <div class="page-head" style="padding-top:96px;">
+    <a href="../projects.html" class="back-link">← Back to Projects</a>
+  </div>
+
+  <article class="detail">
+    <h1 class="detail-title">Portfolio Website</h1>
+
+    <p class="detail-desc">The site you're on right now. A multi-page static site built from scratch to showcase coursework, projects, and experience, with an oscilloscope-inspired dark theme suited to an ECE/CS portfolio. Structured as a real index/detail hierarchy rather than a single scrolling page — an experience or project index links out to its own dedicated page, and coursework is organized by department with filterable category tabs.</p>
+
+    <ul class="detail-list">
+      <li>Built a shared, collapsible sidebar navigation (with icon-only collapsed state) injected across every page from a single JavaScript module, avoiding markup duplication</li>
+      <li>Designed a distinct visual identity — Space Grotesk and JetBrains Mono typography, an amber/teal accent palette, and an animated oscilloscope trace as the signature hero element</li>
+      <li>Deployed as a static site through GitHub Pages, version-controlled with Git/GitHub</li>
+    </ul>
+
+    <p class="detail-stack">HTML · CSS · JavaScript · Git/GitHub · GitHub Pages</p>
+  </article>
+
+  <footer class="footer">
+    <p>Julien Polycarpe — Worcester, MA / Brooklyn, NY</p>
+  </footer>
+</main>
+
+<script>
+  window.SITE_ROOT = "../";
+  window.CURRENT_PAGE = "projects";
+</script>
+<script src="../common.js"></script>
+</body>
+</html>

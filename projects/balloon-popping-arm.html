@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balloon-Popping Robotic Arm — Julien Polycarpe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<main>
+  <div class="page-head" style="padding-top:96px;">
+    <a href="../projects.html" class="back-link">← Back to Projects</a>
+  </div>
+
+  <article class="detail">
+    <h1 class="detail-title">Balloon-Popping Robotic Arm</h1>
+    <p class="detail-role">1st Place — Robotics Hackathon</p>
+
+    <p class="detail-desc">A joystick-controlled robotic arm built for a robotics hackathon, where the challenge was to pop as many balloons as possible from a fixed distance. The arm chained multiple servos together to give it 3 degrees of freedom, controlled live via joystick, with a toothpick mounted at the tip as the popping mechanism. Positioned roughly 5 feet from a rack of 15 balloons, the arm popped every one — taking first place.</p>
+
+    <ul class="detail-list">
+      <li>Chained multiple servo motors together to achieve 3 degrees of freedom, giving the arm enough reach and precision to hit each target</li>
+      <li>Mapped joystick input to real-time servo positioning for direct manual control</li>
+      <li>Mounted a toothpick as the end effector, precise enough to pop all 15 balloons in the rack</li>
+    </ul>
+
+    <p class="detail-stack">Arduino IDE · Servo Motors · Joystick Control</p>
+  </article>
+
+  <footer class="footer">
+    <p>Julien Polycarpe — Worcester, MA / Brooklyn, NY</p>
+  </footer>
+</main>
+
+<script>
+  window.SITE_ROOT = "../";
+  window.CURRENT_PAGE = "projects";
+</script>
+<script src="../common.js"></script>
+</body>
+</html>

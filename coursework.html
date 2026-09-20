@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coursework — Julien Polycarpe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+  <div class="page-head">
+    <p class="page-kicker">Index / Coursework</p>
+    <h1 class="page-title">Coursework</h1>
+    <p class="page-lede">Select a category to see the classes under it.</p>
+  </div>
+
+  <div class="category-tabs" id="categoryTabs">
+    <button class="category-tab active" data-category="cs">Computer Science</button>
+    <button class="category-tab" data-category="ece">Electrical &amp; Computer Engineering</button>
+    <button class="category-tab" data-category="math">Math &amp; Science</button>
+    <button class="category-tab" data-category="other">Other</button>
+  </div>
+
+  <div class="course-group active" data-category="cs">
+    <h2 class="course-group-title">Computer Science</h2>
+    <ul class="course-list">
+      <li><span class="course-code">CS 1101</span>Introduction to Program Design</li>
+      <li><span class="course-code">CS 2102</span>Object-Oriented Design Concepts</li>
+      <li><span class="course-code">CS 2022</span>Discrete Mathematics</li>
+      <li><span class="course-code">CS 2223</span>Algorithms</li>
+      <li><span class="course-code">CS 2303</span>Systems Programming Concepts</li>
+      <li><span class="course-code">CS 3431</span>Database Systems I</li>
+      <li><span class="course-code">CS 3733</span>Software Engineering</li>
+      <li><span class="course-code">CS 3043</span>Social Implications of Information Processing<span class="course-term">Spring 2027</span></li>
+      <li><span class="course-code">CS 4341</span>Introduction to Artificial Intelligence<span class="course-term">Spring 2027</span></li>
+    </ul>
+  </div>
+
+  <div class="course-group" data-category="ece">
+    <h2 class="course-group-title">Electrical &amp; Computer Engineering</h2>
+    <ul class="course-list">
+      <li><span class="course-code">ECE 2010</span>Introduction to Electrical &amp; Computer Engineering</li>
+      <li><span class="course-code">ECE 2019</span>Sensors, Circuits, and Systems</li>
+      <li><span class="course-code">ECE 2029</span>Introduction to Digital Circuit Design</li>
+      <li><span class="course-code">ECE 2039</span>Computational Engineering</li>
+      <li><span class="course-code">ECE 2311</span>Continuous-Time Signal and System Analysis</li>
+      <li><span class="course-code">ECE 2312</span>Discrete-Time Signal and System Analysis<span class="course-term">Spring 2027</span></li>
+      <li><span class="course-code">ECE 2049</span>Embedded Computing in Engineering Design<span class="course-term">Spring 2027</span></li>
+    </ul>
+  </div>
+
+  <div class="course-group" data-category="math">
+    <h2 class="course-group-title">Math &amp; Science</h2>
+    <ul class="course-list">
+      <li><span class="course-code">MA 1023</span>Calculus III</li>
+      <li><span class="course-code">MA 1024</span>Calculus IV</li>
+      <li><span class="course-code">MA 2051</span>Ordinary Differential Equations</li>
+      <li><span class="course-code">MA 2071</span>Matrices and Linear Algebra I</li>
+      <li><span class="course-code">MA 2611</span>Applied Statistics I</li>
+      <li><span class="course-code">MA 2621</span>Probability for Applications</li>
+      <li><span class="course-code">PH 1110</span>General Physics — Mechanics</li>
+      <li><span class="course-code">PH 1120</span>General Physics — Electricity and Magnetism</li>
+      <li><span class="course-code">ES 2501</span>Introduction to Static Systems</li>
+    </ul>
+  </div>
+
+  <div class="course-group" data-category="other">
+    <h2 class="course-group-title">Other</h2>
+    <ul class="course-list">
+      <li><span class="course-code">ECON 1110</span>Introductory Microeconomics</li>
+      <li><span class="course-code">WR 1010</span>Elements of Writing</li>
+      <li><span class="course-code">MU 1000</span>Music and Its Makers</li>
+      <li><span class="course-code">MU 1100</span>Foundations of Music Theory and Aural Skills</li>
+      <li><span class="course-code">WPE 1601</span>Insight Program</li>
+      <li><span class="course-code">WPE 1012</span>Basketball<span class="course-term">Spring 2027</span></li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>Julien Polycarpe — Worcester, MA / Brooklyn, NY</p>
+  </footer>
+</main>
+
+<script>
+  window.SITE_ROOT = "./";
+  window.CURRENT_PAGE = "coursework";
+</script>
+<script src="common.js"></script>
+<script>
+  const tabs = document.querySelectorAll("#categoryTabs .category-tab");
+  const groups = document.querySelectorAll(".course-group");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const category = tab.dataset.category;
+      tabs.forEach(t => t.classList.toggle("active", t === tab));
+      groups.forEach(g => g.classList.toggle("active", g.dataset.category === category));
+    });
+  });
+</script>
+</body>
+</html>
